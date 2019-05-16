@@ -1,0 +1,11 @@
+{
+  "/travel/*": {
+    "target": "http://localhost:8880/travel",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/travel": ""
+    }
+  }
+}

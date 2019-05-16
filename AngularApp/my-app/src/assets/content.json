@@ -1,0 +1,19 @@
+{
+  "search": "Search",
+  "statisticData": "Statistics",
+  "origin": "Origin",
+  "destination": "Destination",
+  "findDeal": "Find Deal",
+  "heading": "AirLines",
+  "originCode": "Origin Code",
+  "destCode": "Destination Code",
+  "values": "StatisticData",
+  "requestCount": "RequestCount",
+  "request200Count": "Request200Count",
+  "request4XXCount": "Request4XXCount",
+  "request5XXCount": "Request5XXCount",
+  "totalResponseTimeMillis": "TotalResponseTimeMillis",
+  "avgRequestTime": "AvgResponseTimeMillis",
+  "minRequestTime": "MinResponseTimeMillis",
+  "maxResponseTimeMillis": "MaxResponseTimeMillis"
+}

@@ -1,0 +1,71 @@
+<div class="statistic" *ngIf="content">
+  <div class="container">
+    <div class="row">
+      <div>
+        <button class="btn mr-1 btn-primary" value='Search' (click)="navigateToSearch()">{{content.search}}</button>
+      </div>
+      <div>
+        <button class="btn btn-warning" value='Statistics'
+                (click)="navigateToStatistics()">{{content.statisticData}}</button>
+      </div>
+    </div>
+    <table class="statistic" id="statisticData">
+      <th>{{content.statisticData}}</th>
+      <th>{{content.values}}</th>
+      <tr>
+        <td>{{content.requestCount}}</td>
+        <td>
+          {{requestCount}}
+        </td>
+      </tr>
+      <tr>
+        <td>{{content.request200Count}}</td>
+        <td>
+          {{request200Count}}
+        </td>
+      </tr>
+
+      <tr>
+        <td>{{content.request4XXCount}}</td>
+        <td>
+          {{request4XXCount}}
+        </td>
+      </tr>
+
+      <tr>
+        <td>{{content.request5XXCount}}</td>
+        <td>
+          {{request5XXCount}}
+        </td>
+      </tr>
+
+      <tr>
+        <td>{{content.totalResponseTimeMillis}}</td>
+        <td>
+          {{totalResponseTimeMillis}}
+        </td>
+      </tr>
+
+      <tr>
+        <td>{{content.avgRequestTime}}</td>
+        <td>
+          {{avgRequestTime}}
+        </td>
+      </tr>
+
+      <tr>
+        <td>{{content.minRequestTime}}</td>
+        <td>
+          {{minRequestTime}}
+        </td>
+      </tr>
+      <tr>
+        <td>{{content.maxResponseTimeMillis}}</td>
+        <td>
+          {{maxResponseTimeMillis}}
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+{
+  "name": "http.server.requests",
+  "description": null,
+  "baseUnit": "seconds",
+  "measurements": [
+    {
+      "statistic": "COUNT",
+      "value": 62.0
+    },
+    {
+      "statistic": "TOTAL_TIME",
+      "value": 381.527463091
+    },
+    {
+      "statistic": "MAX",
+      "value": 10.006764206
+    }
+  ],
+  "availableTags": [
+    {
+      "tag": "exception",
+      "values": [
+        "None",
+        "UnirestException"
+      ]
+    },
+    {
+      "tag": "method",
+      "values": [
+        "GET"
+      ]
+    },
+    {
+      "tag": "uri",
+      "values": [
+        "/actuator/metrics/{requiredMetricName}",
+        "/getAirportDetails",
+        "/getFare/{source}/{destination}",
+        "/**"
+      ]
+    },
+    {
+      "tag": "outcome",
+      "values": [
+        "REDIRECTION",
+        "SUCCESS",
+        "SERVER_ERROR"
+      ]
+    },
+    {
+      "tag": "status",
+      "values": [
+        "500",
+        "200",
+        "304"
+      ]
+    }
+  ]
+}

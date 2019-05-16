@@ -1,0 +1,128 @@
+/* You can add global styles to this file, and also import other style files */
+
+.airline-details {
+  margin-top: 2%;
+}
+
+.airline-navigation {
+  margin-top: 2%;
+}
+
+.origin {
+  color: #555;
+  background-color: #fff !important;
+  background-image: none;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  margin-left: 37%;
+}
+
+.destinationOptions {
+  margin-left: 136% !important;
+  background-color: white !important;
+}
+
+.cdk-overlay-connected-position-bounding-box {
+  margin-left: 13%;
+}
+
+.mat-form-field {
+  width: 80%;
+}
+
+.deal {
+  margin-top: 4%;
+}
+
+.destination {
+  color: #555;
+  background-color: #fff !important;
+  background-image: none;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+}
+
+#airlines {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#airlines td, #airlines th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#airlines tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#airlines tr:hover {
+  background-color: #ddd;
+}
+
+#airlines th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: cadetblue;
+  color: white;
+}
+
+#statisticData {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#statisticData td, #statisticData th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#statisticData tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#statisticData tr:hover {
+  background-color: #ddd;
+}
+
+#statisticData th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: cadetblue;
+  color: white;
+}
+
+.airline-fare {
+  margin-top: 10%;
+  width: 77%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  color: cadetblue;
+}
+
+.statistic {
+  margin-top: 2%;
+}
+
+@media  (max-width: 700px)  {
+  .originOptions {
+    background-color: white !important;
+    margin-top: -36%;
+    margin-left: -11%;
+  }
+}
+@media  (max-width: 700px)  {
+  .destinationOptions {
+    background-color: white !important;
+    margin-top: -15% !important;
+    margin-left: -11% !important;
+  }
+}

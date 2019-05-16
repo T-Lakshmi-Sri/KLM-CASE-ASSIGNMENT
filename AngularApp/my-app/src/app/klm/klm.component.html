@@ -1,0 +1,85 @@
+<div class="container" *ngIf="content">
+  <div class="row airline-navigation">
+    <div>
+      <button class="btn mr-1 btn-primary" value='Search' (click)="navigateToSearch()">{{content.search}}</button>
+    </div>
+    <div>
+      <button class="btn btn-warning" value='Statics'
+              (click)="navigateToStatistics()">{{content.statisticData}}</button>
+    </div>
+  </div>
+  <div>
+    <form>
+      <div class="row airline-details">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <mat-form-field>
+            <span>{{content.origin}}</span>
+            <input type="text" class="origin" aria-label="origin" matInput [formControl]="myOriginControl"
+                   (click)="getAirlineDataFare()"
+                   [matAutocomplete]="auto1">
+            <mat-autocomplete class="originOptions" #auto1="matAutocomplete" [displayWith]="displayFn">
+              <mat-option *ngFor="let option of originOptions" [value]="option">
+                {{option.code}}-{{option.name}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <mat-form-field>
+            <span>{{content.destination}}</span>
+            <input type="text" class="destination" aria-label="destination" matInput
+                   [formControl]="myDestinationControl"
+                   (click)="getAirlineDataFare()"
+                   [matAutocomplete]="auto">
+            <mat-autocomplete class="destinationOptions" #auto="matAutocomplete" [displayWith]="displayFn">
+              <mat-option *ngFor="let optionItem of destinationOptions" [value]="optionItem">
+                {{optionItem.code}}-{{optionItem.name}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <button class="btn btn-danger deal" (click)="findDeal()">{{content.findDeal}}</button>
+        </div>
+      </div>
+
+    </form>
+
+
+  </div>
+  <div class="airline-fare" *ngIf="airLineFareData">
+
+    <table id="airlines">
+      <th>
+        {{content.heading}}
+      </th>
+      <th>
+        {{content.originCode}}
+      </th>
+      <th>
+        {{content.destCode}}
+      </th>
+      <th>
+        Fare
+      </th>
+      <tr>
+        <td>
+          KLM AIRLINES
+        </td>
+        <td>
+          {{originCode}}
+        </td>
+        <td>
+          {{destCode}}
+        </td>
+        <td>
+          {{airlineFare + airlineCurrency}}
+        </td>
+      </tr>
+
+    </table>
+
+  </div>
+</div>
